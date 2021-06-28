@@ -35,9 +35,8 @@ public class HotelReservation {
 
 	/**
 	 * Created a method to get the cheapest hotel according to the start date and
-	 * last date .
-	 *  ChronoUnit is used to calculate the days between start and last date . 
-	 * Comparator is used to compare the regular rate of the hotels and then
+	 * last date . ChronoUnit is used to calculate the days between start and last
+	 * date . Comparator is used to compare the regular rate of the hotels and then
 	 * stored in the collection.
 	 */
 	public Hotel getCheapestHotel(LocalDate startDate, LocalDate lastDate) {
@@ -51,9 +50,9 @@ public class HotelReservation {
 
 	/**
 	 * weekEndData is a method through which calculate the cheapest hotel for
-	 * weekends also. dateList is use to store the date in the form of list traverse
-	 * the date list using advance for loop. 
-	 * day of week is use to calculate the day at that particular date.
+	 * weekends also. dateList is use to store the date in the form of list traverse the date list 
+	 * using advance for loop. day of week is use to calculate the day
+	 * at that particular date.
 	 */
 	public void weekEndData(LocalDate startDate, LocalDate lastDate) {
 		List<LocalDate> dateList = startDate.datesUntil(lastDate).collect(Collectors.toList());

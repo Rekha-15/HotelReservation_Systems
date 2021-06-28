@@ -10,7 +10,8 @@ public class Hotel {
 	public String name;
 	public int regularWeekDayRate;
 	public int regularWeekEndRate;
-	public int totalRegularRate;
+    public int totalRegularRate;
+    public int rating;
 
 	/**
 	 * Created a parameterize constructor of the class hotel .
@@ -18,17 +19,18 @@ public class Hotel {
 	 * @param name
 	 * @param regularWeekDayRate
 	 * @param regularWeekEndRate
+	 * @param rating 
 	 */
-	public Hotel(String name, int regularWeekDayRate, int regularWeekEndRate) {
+	public Hotel(String name, int regularWeekDayRate, int regularWeekEndRate, int rating) {
 		this.name = name;
 		this.regularWeekDayRate = regularWeekDayRate;
 		this.regularWeekEndRate = regularWeekEndRate;
+		this.rating = rating;
 
 	}
 
 	@Override
 	public String toString() {
-		return "Hotel Name: " + name + " " + "\nRegularWeekDayRate: " + regularWeekDayRate + "\nRegularWeekEndRate: "
-				+ regularWeekEndRate;
+		return "Hotel Name: " + name + " " + "\nRegularWeekDayRate: " + regularWeekDayRate + "\nRegularWeekEndRate: " + regularWeekEndRate + "\nRating: " + rating ;
 	}
 }
